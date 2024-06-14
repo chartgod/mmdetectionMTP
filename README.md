@@ -8,7 +8,7 @@ Follow these steps to set up the environment and install necessary dependencies 
 
 ### Step-by-Step Setup Guide
 
-#### 1. Create and Activate Virtual Environment
+#### 1. Create and Activate Virtual Environment & Train
 ```bash
 conda create -n mtp python=3.8.19
 conda install pytorch==1.10.0 torchvision==0.11.0 -c pytorch
@@ -29,7 +29,7 @@ pip install ftfy
 pip install regex
 pip install timm
 
-#### 2. 🚀 Usage (Train)
+
+🚀 Usage (Train)
 ex) Train - MultiGPU 
 CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python /home/lsh/share/mmsatellite/train.py --config /home/lsh/share/mmsatellite/configs/mtp/rvsa-l-unet-256-mae-mtp_levir.py --work-dir /home/lsh/share/mmsatellite/rvsa-l-unet-256-mae-mtp_levir_workdir
-
