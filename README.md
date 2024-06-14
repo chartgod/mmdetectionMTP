@@ -41,7 +41,7 @@ For training with multiple GPUs, use the following command:
 CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python /home/lsh/share/mmsatellite/train.py --config /home/lsh/share/mmsatellite/configs/mtp/rvsa-l-unet-256-mae-mtp_levir.py --work-dir /home/lsh/share/mmsatellite/rvsa-l-unet-256-mae-mtp_levir_workdir
 ```
 
-#### MTP - Change Detection (using Open-CD)
+#### ex) MTP - Change Detection (using Open-CD)
 ```
 Training on WHU using UperNet with a backbone network of MAE + MTP pretrained ViT-L + RVSA:
 srun -J opencd -p gpu --gres=dcu:4 --ntasks=8 --ntasks-per-node=4 --cpus-per-task=8 --kill-on-bad-exit=1 \
