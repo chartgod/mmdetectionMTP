@@ -3,7 +3,7 @@
 
 Welcome to the mmdetectionMTP repository! This project is built on top of the MTP environment from [ViTAE-Transformer/MTP](https://github.com/ViTAE-Transformer/MTP).
 
-## Environment Settings (Train) 🚀
+## Environment Settings 🛠️
 Follow these steps to set up the environment and install necessary dependencies for training.
 
 ### Step-by-Step Setup Guide
@@ -29,7 +29,7 @@ pip install ftfy
 pip install regex
 pip install timm
 
-🛠️ Usage
+#### 2. 🚀 Usage (Train)
 ex) Train - MultiGPU 
 CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python /home/lsh/share/mmsatellite/train.py --config /home/lsh/share/mmsatellite/configs/mtp/rvsa-l-unet-256-mae-mtp_levir.py --work-dir /home/lsh/share/mmsatellite/rvsa-l-unet-256-mae-mtp_levir_workdir
 
