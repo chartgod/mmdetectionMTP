@@ -39,6 +39,10 @@ pip install timm
 ```
 For training with multiple GPUs, use the following command:
 CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python /home/lsh/share/mmsatellite/train.py --config /home/lsh/share/mmsatellite/configs/mtp/rvsa-l-unet-256-mae-mtp_levir.py --work-dir /home/lsh/share/mmsatellite/rvsa-l-unet-256-mae-mtp_levir_workdir
+
+CUDA_VISIBLE_DEVICES=3,4 python -m torch.distributed.launch --nproc_per_node=2 --master_port=29500 /home/lsh/share/mmsatellite/train_multi3_4.py --config /home/lsh/share/mmsatellite/configs/mtp/rvsa-l-unet-256-mae-mtp_levir17.py --work-dir /home/lsh/share/mmsatellite/MTP_trainer/17 2>&1 | tee /home/lsh/share/mmsatellite/mtp_2023levir_base17_log.txt
+
+CUDA_VISIBLE_DEVICES=1,2,3,4 python -m torch.distributed.launch --nproc_per_node=4 --master_port=29500 /home/lsh/share/mmsatellite/train_multi1234.py --config /home/lsh/share/mmsatellite/configs/mtp/rvsa-l-unet-256-mae-mtp_levir24.py --work-dir /home/lsh/share/mmsatellite/MTP_trainer/24 2>&1 | tee /home/lsh/share/mmsatellite/mtp_2023levir_base24_log.txt
 ```
 
 #### ex) MTP - Change Detection (using Open-CD)
