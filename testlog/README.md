@@ -27,7 +27,7 @@ Each model is tested across the six categories. The command lines used for each 
 
 - **Changer**
     ```bash
-    CUDA_VISIBLE_DEVICES=2 python /home/lsh/share/CD/open-cd/tools/test.py /home/lsh/share/CD/open-cd/configs/changer/changer_ex_mit-b0_512x512_40k_levircd건물.py /home/lsh/share/CD/open-cd/test/건물/changer/best_mIoU_iter_28000.pth --show-dir /home/lsh/share/CD/open-cd/test/과년도건물changer > /home/lsh/share/CD/open-cd/test/과년도/건물changer.txt 2>&1
+    CUDA_VISIBLE_DEVICES=2 python /home/lsh/share/CD/open-cd/tools/test.py /home/lsh/share/CD/open-cd/configs/changer/changer_ex_r18_512x512_40k_levircd건물.py /home/lsh/share/CD/open-cd/test/건물/changer/best_mIoU_iter_28000.pth --show-dir /home/lsh/share/CD/open-cd/test/과년도건물changer > /home/lsh/share/CD/open-cd/test/과년도/건물changer.txt 2>&1
     ```
 
 - **MTP**
