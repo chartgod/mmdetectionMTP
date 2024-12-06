@@ -18,3 +18,12 @@ Before running the script, ensure that Python is installed along with the follow
 If the required libraries are not already installed, you can add them using pip:
 ```bash
 pip install numpy pillow scikit-learn
+
+Performance Results (Sorted by IoU)
+======================================================================
+Rank    Filename        IoU (%)    F1 (%)     Precision (%)     Recall (%)
+======================================================================
+1       image1.png      90.23      89.45      92.34            88.12
+2       image2.png      85.34      84.00      88.12            80.45
+3       image3.png      75.56      74.00      78.56            70.45
+...
