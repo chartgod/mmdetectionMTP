@@ -1,0 +1,29 @@
+  504  conda create -n mtp_ship python=3.8.19
+  506  conda activate mtp_ship
+  507  conda install pytorch==1.10.0 torchvision==0.11.0 -c pytorch
+  508  pip install -U openmim
+  509  mim install mmengine
+  511  mim install "mmcv==2.0.0"
+  512  pip install mmdet==3.0.0
+  513  cd share/
+  514  ls
+  515  git clone -b 1.0.0rc1 https://github.com/open-mmlab/mmrotate.git
+  516  git clone https://github.com/open-mmlab/mmrotate.git
+  517  cd mmrotate
+  518  cd mmrotate
+  519  git tag
+  520  git checkout v1.0.0rc1
+  521  pip install -r requirements/build.txt
+  522  ls
+  523  ls ../
+  524  cd ..
+  525  ls
+  526  cd ..
+  527  sudo rm -r mmrotate/
+  528  git clone https://github.com/open-mmlab/mmrotate.git
+  529  cd mmrotate/
+  530  pip install -r requirements/build.txt
+  531  pip install -v -e .
+  532  mim install mmcv-full
+  533  pip install -v -e .
+  534  history
