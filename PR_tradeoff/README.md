@@ -12,3 +12,7 @@
 ## **사용법**
 ```bash
 bash run_opencd.sh <config.py> <checkpoint.pth> <work_dir> <prob_dir> <label_dir>
+CUDA_VISIBLE_DEVICES=7 python preicision_recall_tradeoff_code.py \
+    /home/lsh/share/mmsatellite/configs/mtp/rvsa-l-unet-256-mae-mtp_levir_커스텀10000.py \
+    /home/lsh/share/mmsatellite/MTP_trainer/levir_cd_커스텀10000/epoch_150.pth \
+    --work-dir /home/lsh/share/mmsatellite/tradeoff 
